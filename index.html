@@ -1,0 +1,22 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Debug Demo</title>
+</head>
+<body>
+Số đầu tiên:<br/>
+<input type="number" id="number1"><br>
+Số thứ hai: <br/>
+<input type="number" id="number2"><br/>
+<div id="resultDiv"></div>
+<input type="button" value="Tính tích" onclick="products();">
+<script>
+    function products() {
+        let number1 = document.getElementById("number1").value;
+        let number2 = document.getElementById("number2").value;
+        let result = number1 * number2;
+        document.getElementById("resultDiv").innerHTML = "Kết quả: " + result;
+    }
+</script>
+</body>
+<html>
